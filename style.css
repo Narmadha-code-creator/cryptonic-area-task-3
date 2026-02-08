@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+}
+
+/* Semantic Styling */
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(to right,#43cea2,#185a9d);
+    color:white;
+}
+
+/* GRID */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#eee;
+    padding:40px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* FLEXBOX (used in exercises too) */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:20px;
+}
+
+.gallery div{
+    flex:1 1 200px;
+    background:#ccc;
+    height:150px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        align-items:center;
+    }
+}
